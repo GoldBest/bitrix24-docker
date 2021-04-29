@@ -12,6 +12,7 @@ services:
     privileged: true
     volumes:
       - ./web:/home/bitrix/www
+      - ./etc/php.d/bitrixenv.ini:/etc/php.d/bitrixenv.ini
     depends_on:
       - mysql
   mysql:

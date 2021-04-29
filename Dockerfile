@@ -117,7 +117,7 @@ COPY ./usr /usr
 
 WORKDIR /home/bitrix/www
 
-COPY ./www /home/bitrix/www
+COPY ./web /home/bitrix/www
 
 RUN chown -R bitrix:bitrix /home/bitrix
 RUN chmod -R 777 /tmp
